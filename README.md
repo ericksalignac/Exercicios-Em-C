@@ -1,2 +1,2 @@
-# Exercicios-Em-C
-Repositório destinado aos exercícios em C propostos durante o curso de Engenharia de Softwere
+# Exercicios em C
+Repositório destinado aos exercícios na linguagm C propostos durante o curso de Engenharia de Softwere
