@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
 
 #define TAMANHO_NOME_DO_CLIENTE 100
 
@@ -13,6 +15,7 @@ struct filme {
 };
 
 int main(void) {
+	setlocale(LC_ALL, "Portuguese");
     struct cliente erick;
     struct filme megamente;
 
@@ -36,4 +39,6 @@ int main(void) {
     printf("\n Está disponível: %d", megamente.esta_disponivel);
     printf("\n Filme pode ser locado pelo cliente: %d", (megamente.esta_disponivel) && (erick.idade >= megamente.classificacao_filme));
     printf("\n Anos restantes: %d", (erick.idade < megamente.classificacao_filme) * (megamente.classificacao_filme - erick.idade));
+    system ("pause");
+    return 0;
 };
